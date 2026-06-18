@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Course Registration</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>Student Course Registration System</h1>
+<p>Register for your university courses</p>
+</header>
+
+<section class="courses">
+<h2>Available Courses</h2>
+<table>
+<tr><th>Course Code</th><th>Course Name</th><th>Hours</th></tr>
+<tr><td>WEB101</td><td>Web Development</td><td>3</td></tr>
+<tr><td>NET201</td><td>Computer Networks</td><td>3</td></tr>
+<tr><td>DB301</td><td>Database Systems</td><td>3</td></tr>
+</table>
+</section>
+
+<section class="form-section">
+<h2>Course Registration Form</h2>
+<form id="registrationForm">
+<label>Student Name</label>
+<input type="text" id="name">
+<label>Student ID</label>
+<input type="text" id="studentId">
+<label>Email</label>
+<input type="email" id="email">
+<label>Select Course</label>
+<select id="course">
+<option value="">Choose Course</option>
+<option>Web Development</option>
+<option>Computer Networks</option>
+<option>Database Systems</option>
+</select>
+<button type="submit">Register</button>
+</form>
+<p id="message"></p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
